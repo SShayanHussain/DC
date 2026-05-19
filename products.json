@@ -1,82 +1,102 @@
 [
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e70" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e70"
+    },
     "name": "One Piece, Vol. 1",
     "price": 9.99,
     "description": "Join Monkey D. Luffy and his swashbuckling crew in their search for the ultimate treasure, One Piece!",
     "category": "Adventure",
-    "image": "https://m.media-amazon.com/images/I/91rE-146nGL._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e71" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e71"
+    },
     "name": "Naruto, Vol. 1",
     "price": 9.99,
     "description": "Twelve years ago the Village Hidden in the Leaves was attacked by a fearsome threat. A nine-tailed fox spirit claimed the life of the village leader, the Hokage, and many others. Today, the village is at peace and a troublemaking kid named Naruto is struggling to graduate from Ninja Academy.",
     "category": "Action",
-    "image": "https://m.media-amazon.com/images/I/912xRMMoa4L._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e72" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e72"
+    },
     "name": "Attack on Titan, Vol. 1",
     "price": 10.99,
     "description": "In this post-apocalyptic sci-fi story, humanity has been devastated by the bizarre, giant humanoids known as the Titans. Little is known about where they came from or why they are bent on consuming mankind.",
     "category": "Action",
-    "image": "https://m.media-amazon.com/images/I/81A1Ovw0XRL._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e73" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e73"
+    },
     "name": "Death Note, Vol. 1",
     "price": 9.99,
     "description": "Light Yagami is an ace student with great prospects—and he's bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god.",
     "category": "Thriller",
-    "image": "https://m.media-amazon.com/images/I/815b-2E89vL._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e74" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e74"
+    },
     "name": "Fullmetal Alchemist, Vol. 1",
     "price": 11.99,
     "description": "Alchemy: the mystical power to alter the natural world; something between magic, art, and science. When two brothers, Edward and Alphonse Elric, dabbled in this power to grant their dearest wish, one of them lost an arm and a leg…and the other became nothing but a soul locked into a body of living steel.",
     "category": "Adventure",
-    "image": "https://m.media-amazon.com/images/I/81mD3V-vqwL._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e75" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e75"
+    },
     "name": "Demon Slayer: Kimetsu no Yaiba, Vol. 1",
     "price": 9.99,
     "description": "Learning to destroy demons won't be easy, and Tanjiro barely knows where to start. The surprise appearance of another boy named Giyu, who seems to know what's going on, might provide some answers.",
     "category": "Action",
-    "image": "https://m.media-amazon.com/images/I/81A6rNxtU7L._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e76" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e76"
+    },
     "name": "Dragon Ball Z, Vol. 1",
     "price": 9.99,
     "description": "Son Goku is the greatest hero on Earth. Five years after defeating the demon king Piccolo, he's grown up and had a family--he's married, and he has a child, Son Gohan. But what is the real reason for Goku's incredible strength?",
     "category": "Action",
-    "image": "https://m.media-amazon.com/images/I/81Y7yqM4iUL._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e77" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e77"
+    },
     "name": "Bleach, Vol. 1",
     "price": 9.99,
     "description": "Ichigo Kurosaki has always been able to see ghosts, but this ability doesn't change his life nearly as much as his close encounter with Rukia Kuchiki, a Soul Reaper and member of the mysterious Soul Society.",
     "category": "Action",
-    "image": "https://m.media-amazon.com/images/I/91tK0c598xL._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e78" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e78"
+    },
     "name": "My Hero Academia, Vol. 1",
     "price": 9.99,
     "description": "Middle school student Izuku Midoriya wants to be a hero more than anything, but he hasn't got an ounce of power in him. With no chance of ever getting into the prestigious U.A. High School for budding heroes, his life is looking more and more like a dead end.",
     "category": "Action",
-    "image": "https://m.media-amazon.com/images/I/81t-MvNfX6L._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   },
   {
-    "_id": { "$oid": "6473d2aeff68755df2527e79" },
+    "_id": {
+      "$oid": "6473d2aeff68755df2527e79"
+    },
     "name": "Tokyo Ghoul, Vol. 1",
     "price": 12.99,
     "description": "Shy Ken Kaneki is thrilled to go on a date with the beautiful Rize. But it turns out that she's only interested in his body—eating it, that is. When a morally questionable rescue transforms him into the first half-human half-Ghoul hybrid, Ken is drawn into the dark and violent world of Ghouls.",
     "category": "Horror",
-    "image": "https://m.media-amazon.com/images/I/81N6A4h4XVL._AC_UF1000,1000_QL80_.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   }
 ]
