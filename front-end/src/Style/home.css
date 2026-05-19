@@ -147,3 +147,18 @@ img {
   display: flex;
   align-items: center;
 }
+
+.no-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #152848;
+  border-radius: 23px;
+  color: #4a6a8a;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
