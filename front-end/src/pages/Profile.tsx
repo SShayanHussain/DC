@@ -13,7 +13,7 @@ import { useState, useEffect, Fragment } from "react";
 function Profile() {
 
 
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState<any>({});
 
   useEffect(() => {
     const token = localStorage.getItem("token");

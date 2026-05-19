@@ -4,7 +4,7 @@ import { Fragment, useState, useEffect } from "react";
 import { API } from "../config/api";
 
 function ProductInfo() {
-  const [inputValue, setInputValue] = useState({});
+  const [inputValue, setInputValue] = useState<any>({});
   const productID = localStorage.getItem("productID");
 
   useEffect(() => {
