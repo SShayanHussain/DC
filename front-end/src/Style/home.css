@@ -62,7 +62,8 @@ img {
 .most-popular {
   margin-top: 60px;
   padding: 30px;
-  background-color: #0c1c3e;
+  background-color: rgba(12, 28, 62, 0.82);
+  backdrop-filter: blur(6px);
   border-radius: 23px;
   border: 1px solid rgba(59, 130, 246, 0.1);
 }
@@ -123,7 +124,8 @@ img {
 
 .wid {
   width: 100%;
-  background: #0a1628;
+  background: url('../home.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .heading-section {
