@@ -1,5 +1,0 @@
-{
-  "buildCommand": "cd front-end && npm run build",
-  "installCommand": "cd front-end && npm install --legacy-peer-deps",
-  "outputDirectory": "front-end/dist"
-}
