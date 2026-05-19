@@ -1,6 +1,14 @@
 version: '3.8'
 
 services:
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    networks:
+      - backend
+    restart: unless-stopped
+
   nginx:
     image: nginx:alpine
     ports:
@@ -12,6 +20,7 @@ services:
       - product-service
       - order-service
       - payment-service
+      - edge-service
     networks:
       - backend
     restart: unless-stopped
@@ -26,6 +35,8 @@ services:
   product-service:
     build: ./product-service
     env_file: ./product-service/.env
+    ports:
+      - "8002:3002"
     networks:
       - backend
     restart: unless-stopped
@@ -43,6 +54,15 @@ services:
   payment-service:
     build: ./payment-service
     env_file: ./payment-service/.env
+    networks:
+      - backend
+    restart: unless-stopped
+
+  edge-service:
+    build: ./edge-service
+    env_file: ./edge-service/.env
+    ports:
+      - "8005:3005"
     networks:
       - backend
     restart: unless-stopped

@@ -1,0 +1,14 @@
+config:
+  target: "http://localhost:8002"
+  phases:
+    - duration: 30
+      arrivalRate: 20
+      name: "Warm up"
+    - duration: 60
+      arrivalRate: 100
+      name: "Spike"
+scenarios:
+  - name: "Browse Products (Baseline without Edge)"
+    flow:
+      - get:
+          url: "/products"
