@@ -1,18 +1,19 @@
 html, body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    background-color: #1e1e1e;
-    font-size: 16px;
-    -ms-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  a {
-	color: #CCC;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #080f20;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #7899bb;
   text-decoration: none !important;
 }
+
 a:hover {
-	color: #F99;
+  color: #60a5fa;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,92 +30,120 @@ ul {
 p {
   font-size: 15px;
   line-height: 30px;
-  color: #fff;
+  color: #7899bb;
 }
-.selct{
+
+.selct {
   padding-left: 35px;
   padding-top: 10px;
   height: fit-content;
 }
-select{
-  background-color: #1e1e1e;
+
+select {
+  background-color: #152848;
   width: 200px;
   text-align: center;
   height: 40px;
-  color: #CCC;
-  border: 0;
+  color: #7899bb;
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  border-radius: 8px;
 }
-option{
+
+option {
   color: #fff;
+  background-color: #152848;
 }
+
 img {
   width: 100%;
   overflow: hidden;
 }
 
 .most-popular {
-    margin-top: 60px;
-    padding: 30px;
-    background-color: #1f2122;
-    border-radius: 23px;
-  }
-  
-  .most-popular .item {
-    background-color: #27292a;
-    padding: 30px 15px;
-    border-radius: 23px;
-    margin-bottom: 30px;
-  }
-  
-  .most-popular .item .item {
-    padding: 0px;
-    border-radius: 0px;
-    background-color: transparent;
-    margin-bottom: 0px;
-  }
-  
-  .most-popular .item img {
-    border-radius: 23px;
-  }
-  
-  .most-popular .item h4 {
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    display: inline-block;
-  }
-  
-  .most-popular .item span {
-    color: #666;
-    display: block;
-    margin-top: 7px;
-    font-weight: 400;
-  }
-  
-  .most-popular .item ul {
-    float: right;
-    margin-top: 20px;
-  }
-  
-  .most-popular .item ul li {
-    text-align: right;
-    color: #fff;
-    font-size: 14px;
-  }
-  
-  .most-popular .item ul li:first-child i {
-    color: yellow;
-  }
-  
-  .most-popular .item ul li:last-child i {
-    color: #ec6090;
-  }
-  
-  .most-popular .main-button {
-    text-align: center;
-    margin-bottom: -53px;
-  }
-.wid{
-    width: 100%;
-    background: #27292a;
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #0c1c3e;
+  border-radius: 23px;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.most-popular .item {
+  background-color: #112040;
+  padding: 30px 15px;
+  border-radius: 23px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(59, 130, 246, 0.08);
+  transition: border-color 0.2s ease;
+}
+
+.most-popular .item:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.most-popular .item .item {
+  padding: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  margin-bottom: 0px;
+}
+
+.most-popular .item img {
+  border-radius: 23px;
+}
+
+.most-popular .item h4 {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.most-popular .item span {
+  color: #4a6a8a;
+  display: block;
+  margin-top: 7px;
+  font-weight: 400;
+}
+
+.most-popular .item ul {
+  float: right;
+  margin-top: 20px;
+}
+
+.most-popular .item ul li {
+  text-align: right;
+  color: #7899bb;
+  font-size: 14px;
+}
+
+.most-popular .main-button {
+  text-align: center;
+  margin-bottom: -53px;
+}
+
+.wid {
+  width: 100%;
+  background: #0a1628;
+}
+
+.heading-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heading-section h4 {
+  color: #60a5fa;
+  font-size: 28px;
+}
+
+.heading-section h4 em {
+  color: #fff;
+  font-style: normal;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
 }

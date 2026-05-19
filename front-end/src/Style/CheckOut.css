@@ -9,36 +9,39 @@
 }
 
 body {
-  
   font-size: 16px;
+  background-color: #080f20;
 }
 
 .wrapper {
-  background: url("../assets/photo3.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: linear-gradient(135deg, #080f20 0%, #0c1c3e 100%);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
 }
 
 .containers {
   max-width: 600px;
   margin: 0 auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #0f2040;
+  border: 1px solid rgba(59, 130, 246, 0.2);
   padding: 40px;
-  border-radius: 5px;
-  backdrop-filter: blur(20px);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
-.spaceto{
+
+.spaceto {
   padding-top: 100px;
 }
+
 .title {
-  color: #2a3d4f;
-  font-size: 2.5rem;
+  color: #ffffff;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
 .input-form {
@@ -47,10 +50,11 @@ body {
 
 .input-form .label {
   display: block;
-  font-size: 1.1rem;
-  color: #2a3d4f;
-  text-transform: capitalize;
-  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #7899bb;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
 }
 
 .input-form .items {
@@ -62,18 +66,24 @@ body {
 .section-3 .items .input {
   background: transparent;
   border: none;
-  border-bottom: 2px solid #2a3d4f;
+  border-bottom: 2px solid #1e3a6e;
   width: 100%;
-  padding: 10px;
-  font-size: 1.1rem;
-  color: #1f1e1e;
-  transition: all 0.3s ease;
+  padding: 10px 4px;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
 }
 
 .section-1 .items .input:focus,
 .section-2 .items .input:focus,
 .section-3 .items .input:focus {
-  border-color: #fff;
+  border-color: #3b82f6;
+}
+
+.section-1 .items .input::placeholder,
+.section-2 .items .input::placeholder,
+.section-3 .items .input::placeholder {
+  color: #3a5070;
 }
 
 .input-form .section-3 {
@@ -86,13 +96,13 @@ body {
 }
 
 .bat {
-  background: #2a3d4f;
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
   color: #fff;
-  font-size: 1.2rem;
-  padding: 12px 20px;
+  font-size: 1.1rem;
+  padding: 14px 20px;
   text-align: center;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 2px;
@@ -100,11 +110,10 @@ body {
 }
 
 .bat:hover {
-  background: #fff;
-  color: #2a3d4f;
+  background: linear-gradient(135deg, #1e40af, #2563eb);
 }
 
-.cvc{
+.cvc {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,17 +127,17 @@ body {
   height: 30px;
   text-align: center;
   cursor: pointer;
-  background-color: #2a3d4f;
+  background-color: #2563eb;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
   transition: all 0.3s ease;
 }
 
 .cvc .tooltip:before {
   content: "?";
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -136,10 +145,11 @@ body {
   position: absolute;
   top: -120%;
   right: -20px;
-  background: #2a3d4f;
+  background: #152848;
+  border: 1px solid rgba(59, 130, 246, 0.3);
   padding: 12px;
-  border-radius: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   transform: scale(0);
   opacity: 0;
   transition: all 0.3s ease;
@@ -152,30 +162,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
-  
-  .title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .input-form .items {
-    margin-bottom: 15px;
-  }
-  
-  .input-form .section-3 {
-    flex-direction: column;
-  }
-  
-  .input-form .section-3 .items {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  
-  .btn {
-    font-size: 1.1rem;
-    padding: 10px 16px;
-  }
+  .containers { max-width: 90%; }
+  .title { font-size: 1.6rem; margin-bottom: 20px; }
+  .input-form .items { margin-bottom: 15px; }
+  .input-form .section-3 { flex-direction: column; }
+  .input-form .section-3 .items { width: 100%; margin-bottom: 15px; }
 }

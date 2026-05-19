@@ -1,55 +1,49 @@
-/* Body Styles */
 body {
-  font-family: Arial, sans-serif;
-  font-weight: Bold;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #080f20;
 }
 
-/* Background Styles */
 .backgrounds {
-  background-image: url("../assets/photo6.jpg");
-  height: 100vh;
+  background: linear-gradient(135deg, #080f20 0%, #0c1c3e 100%);
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
-
 }
 
 .spacefo2 {
   padding-top: 100px;
 }
 
-/* Cart Page Styles */
 .cart-page {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: transparent;
-  backdrop-filter: blur(50px);
+  padding: 30px;
+  background-color: #0c1c3e;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 16px;
   overflow: auto;
   color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Cart Page Header Styles */
 .cart-page-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
 .cart-header-text {
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
 
-/* Cart Page Table Styles */
 .cart-page-table {
   overflow-x: auto;
 }
@@ -61,97 +55,96 @@ body {
 }
 
 .cart-table-header th {
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 12px 10px;
+  font-size: 14px;
+  font-weight: 600;
   text-align: left;
-  border-bottom: 2px solid #ddd;
-  color: #fff;
+  border-bottom: 2px solid #1e3a6e;
+  color: #7899bb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.cart-table-img {
-  width: 100px;
-}
+.cart-table-img { width: 100px; }
 
 .cart-table-payment,
 .cart-table-size {
   width: 20%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
-  color: #fff;
+  border-bottom: 1px solid #1e3a6e;
+  color: #7899bb;
 }
 
 .cart-table-content td {
-  padding: 10px;
-  font-size: 16px;
+  padding: 12px 10px;
+  font-size: 15px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #152848;
+  color: #b0c4d8;
 }
 
 .cart-table-image-info img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .bold-text {
-  font-weight: bold;
-  color: #fff;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .right-text-mobile {
   text-align: right;
-  color: #fff;
+  color: #b0c4d8;
 }
 
-/* Cart Table Bill Styles */
 .cart-table-bill {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #1e3a6e;
 }
 
 .bill-sub,
 .bill-total {
-  align-items: end;
   font-size: 18px;
-  color: #fff;
+  color: #b0c4d8;
 }
 
 .bill-total {
-  align-items: end;
-  color: #e3437b;
+  font-size: 22px;
+  font-weight: 700;
+  color: #60a5fa;
 }
 
-/* Cart Header Footer Styles */
 .cart-header-footer {
   display: flex;
   justify-content: flex-end;
 }
 
 .cart-header-cta {
-  padding: 10px 20px;
+  padding: 12px 28px;
   color: #fff;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
-  background-color: #e3437b;
+  background-color: #2563eb;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.2s ease;
 }
 
-/* Cart Table Animation Styles */
-.cart-table-content:hover {
-  background-color: #2d2f32;
-}
+.cart-header-cta:hover { background-color: #1d4ed8; }
 
-.cart-table-image-info img {
-  transition: transform 0.3s ease-in-out;
-}
+.cart-table-content:hover { background-color: #112040; }
 
-.cart-table-image-info img:hover {
-  transform: scale(1.1);
-}
+.cart-table-image-info img { transition: transform 0.3s ease-in-out; }
+.cart-table-image-info img:hover { transform: scale(1.05); }

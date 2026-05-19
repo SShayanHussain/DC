@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import ProductInfo from "./pages/ProductInfo";
@@ -10,12 +10,13 @@ import CheckOut from "./pages/CheckOut";
 import Subscription from "./pages/Subscription";
 import NavBar from "./component/NavBar";
 function App() {
+  const isLoggedIn = !!localStorage.getItem("token");
   return (
     <Fragment>
       <Router>
-        <NavBar />
+        {isLoggedIn && <NavBar />}
         <Routes>
-          <Route index path="/" element={<Home />} />
+          <Route path="/" element={isLoggedIn ? <Home /> : <Navigate to="/login" replace />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
