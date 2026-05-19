@@ -12,8 +12,8 @@ import NavBar from "./component/NavBar";
 function App() {
   return (
     <Fragment>
-      <NavBar />
       <Router>
+        <NavBar />
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />

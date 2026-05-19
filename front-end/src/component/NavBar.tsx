@@ -1,7 +1,8 @@
 import "../Style/NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
-import handleSearch from "../pages/Home";
+import profileHeaderImg from "../assets/profile-header.jpg";
+
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   
@@ -20,15 +21,6 @@ function NavBar() {
                   </h4>
                 </a>
                 <div className="search-input">
-                  {/* <form id="search" onSubmit={handleSearch}>
-                    <input
-                      type="text"
-                      placeholder="Type Something"
-                      id="searchText"
-                      name="searchKeyword"
-                    />
-                    <i className="fa fa-search"></i>
-                  </form> */}
                 </div>
                 <ul className="nav">
                   <li>
@@ -36,10 +28,6 @@ function NavBar() {
                       Home
                     </a>
                   </li>
-
-                  {/* <li>
-                    <a href="/checkout">checkout</a>
-                  </li> */}
                   <li>
                     <a href="/cart">Cart</a>
                   </li>
@@ -51,7 +39,7 @@ function NavBar() {
                   </li>
                   <li>
                     <a href="/profile">
-                      Profile <img src="src\assets\profile-header.jpg" alt="" />
+                      Profile <img src={profileHeaderImg} alt="" />
                     </a>
                   </li>
                 </ul>

@@ -1,9 +1,4 @@
-const express = require('express');
 const productModel = require('../models/productModel');
-
-const app = express();
-
-app.use(express.json());
 
 const getProducts = async (req, res) => {
     try {

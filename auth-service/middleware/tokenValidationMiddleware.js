@@ -14,7 +14,9 @@ const validateToken = asyncHandler(async (req,res,next) =>{
             req.user = decoded.user
             next();
         })
+    } else {
+        return res.status(401).json({ message: "user is not authorized, token missing" });
     }
 })
 
-module.exports = validateToken;
+module.exports = validateToken;

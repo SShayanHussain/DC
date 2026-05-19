@@ -14,6 +14,11 @@ function Register() {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
+    if (password !== confpassword) {
+      alert("passwords doesn't match");
+      return;
+    }
+
     try {
       const response = await fetch(`${API.auth}/auth/register`, {
         method: "POST",
@@ -25,28 +30,14 @@ function Register() {
   
       if (response.ok) {
         console.log("Registered successful");
-        window.location.href = "/";
+        window.location.href = "/login";
       } else {
+        const errData = await response.json();
+        alert(errData.message || "Registration failed");
         console.log("Registered failed");
       }
     } catch (error) {
       console.error("Error:", error);
-    }
-
-    if (password === confpassword) {
-      const data = {
-        email,
-        password,
-        firstName,
-        lastName,
-        age,
-        phone,
-        gender
-      };
-      const dataString = JSON.stringify(data);
-      window.location.href = "/login";
-    } else {
-      alert("passwords doesn't match");
     }
   }
   return (

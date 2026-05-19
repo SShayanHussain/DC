@@ -1,4 +1,3 @@
-const userModel = require('../models/userModel');
 const UserModel = require('../models/userModel');
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
@@ -7,26 +6,24 @@ require("dotenv").config();
 
 const PAYMENT_SERVICE_URL = process.env.PAYMENT_SERVICE_URL || 'http://localhost:3004';
 
-// const getUsers = async (req, res) => {
-//     // const allusers = await userModel.find();
-//     res.json(req.user)
-// }
-
 const getUser = async (req, res) => {
-    const user = await userModel.findById(req.user.id, { password: 0 });
-    // console.log(req.user.id);
-    res.json(user);
-    // res.json({message: `information of user with id ${req.params.id}`})
+    try {
+        const user = await UserModel.findById(req.user.id, { password: 0 });
+        if (!user) return res.status(404).json({ message: 'User not found' });
+        res.json(user);
+    } catch (err) {
+        res.status(500).json({ message: 'Server error', error: err.message });
+    }
 }
 
 const userRegister = async (req, res) => {
-
-    const { email, password } = req.body;
-    const hashedPassword = await bcrypt.hash(password, 10);
-    const foundUser = await userModel.findOne({ email: email });
-    if (foundUser) {
-        res.status(400).json({ message: "user already exists" })
-    } else {
+    try {
+        const { email, password } = req.body;
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const foundUser = await UserModel.findOne({ email: email });
+        if (foundUser) {
+            return res.status(400).json({ message: "user already exists" });
+        }
         const user = await UserModel.create({
             email,
             password: hashedPassword,
@@ -35,19 +32,16 @@ const userRegister = async (req, res) => {
             age: req.body.age,
             phone: req.body.phone,
             gender: req.body.gender
-        }
-
-
-
-        )
-
-        res.json(user.id)
+        });
+        res.json(user.id);
+    } catch (err) {
+        res.status(500).json({ message: 'Registration failed', error: err.message });
     }
 }
 
 const loginUser = async (req, res) => {
     const { email, password } = req.body;
-    const user = await userModel.findOne({ email });
+    const user = await UserModel.findOne({ email });
   
     if (user && (await bcrypt.compare(password, user.password))) {
       const accessToken = jwt.sign(
@@ -75,7 +69,7 @@ const loginUser = async (req, res) => {
   
 
 const subscribe = async (req, res) => {
-    const user = await userModel.findById(req.user.id);
+    const user = await UserModel.findById(req.user.id);
     if (!user) return res.status(404).json({ message: 'User not found' });
 
     const { data: payment } = await axios.post(`${PAYMENT_SERVICE_URL}/payments/process`, {
@@ -96,7 +90,7 @@ const subscribe = async (req, res) => {
 };
 
 const getSubscriptionStatus = async (req, res) => {
-    const user = await userModel.findById(req.user.id, { subscriptionStatus: 1, subscriptionExpiry: 1 });
+    const user = await UserModel.findById(req.user.id, { subscriptionStatus: 1, subscriptionExpiry: 1 });
     if (!user) return res.status(404).json({ message: 'User not found' });
     res.json({ subscriptionStatus: user.subscriptionStatus, subscriptionExpiry: user.subscriptionExpiry });
 };
