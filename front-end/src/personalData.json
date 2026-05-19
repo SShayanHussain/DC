@@ -1,0 +1,47 @@
+{
+    "onePiece":{
+        "name":"One Piece Vol. 1",
+        "src":"src/assets/onepiece.jpg",
+        "type":"Manga",
+        "price":"9.99$",
+        "volume":1,
+        "category":"Shounen",
+        "description":"Monkey D. Luffy sets out to become King of the Pirates in this legendary adventure. After eating the Gum-Gum Devil Fruit, Luffy gains the power of rubber — and the dream of finding the legendary One Piece treasure."
+    },
+    "naruto":{
+        "name":"Naruto Vol. 1",
+        "src":"src/assets/naruto.jpg",
+        "type":"Manga",
+        "price":"8.99$",
+        "volume":1,
+        "category":"Shounen",
+        "description":"A young ninja dreams of becoming Hokage and earning the respect of his village. Naruto Uzumaki carries the Nine-Tailed Fox sealed within him — and a determination to prove himself to the world."
+    },
+    "attackOnTitan":{
+        "name":"Attack on Titan Vol. 1",
+        "src":"src/assets/aot.jpg",
+        "type":"Manga",
+        "price":"10.99$",
+        "volume":1,
+        "category":"Seinen",
+        "description":"Humanity fights for survival against giant humanoid Titans behind enormous walls. Eren Yeager vows revenge after witnessing the fall of Wall Maria and the devastation it brings to his family."
+    },
+    "demonSlayer":{
+        "name":"Demon Slayer Vol. 1",
+        "src":"src/assets/demonslayer.jpg",
+        "type":"Manga",
+        "price":"9.99$",
+        "volume":1,
+        "category":"Shounen",
+        "description":"Tanjiro becomes a demon slayer to avenge his family and find a cure for his sister Nezuko, who has been transformed into a demon. A heartfelt story of brotherhood and perseverance."
+    },
+    "fruitsBasket":{
+        "name":"Fruits Basket Vol. 1",
+        "src":"src/assets/fruitsbasket.jpg",
+        "type":"Manga",
+        "price":"8.99$",
+        "volume":1,
+        "category":"Shoujo",
+        "description":"Tohru Honda discovers the Sohma family secret — members are possessed by the spirits of the Chinese zodiac and transform when hugged by members of the opposite sex. A beautiful story of healing and acceptance."
+    }
+}
